@@ -393,7 +393,7 @@ x(t + h) = x(t) + hf(x,t)
 <ul>
 <li>1- Empezamos con <span class="arithmatex">\(t_{0}=0\)</span> y <span class="arithmatex">\(x_{0}=0\)</span>.</li>
 <li>2- Discretizamos el tiempo de la forma ti.</li>
-<li>3- Encontramos un x para cada punto del tiempo, de la forma <span class="arithmatex">\(x_{i} = x_{i-1} + hf(x_{i}-1)\)</span>.</li>
+<li>3- Encontramos un x para cada punto del tiempo, de la forma <span class="arithmatex">\(x_{i} = x_{i-1} + hf(x_{i-1})\)</span>.</li>
 </ul>
 <h2 id="runge-kutta-rk">Runge-Kutta (RK)</h2>
 <p>El método de Runge-Kutta es un método numérico el cual se usa para aproximar la solución de una ecuación diferencial. Este es uno de los métodos más útiles para la resolución de ecuaciones diferenciales debido a su estabilidad. Hay varios tipos de Runge-Kutta cuya diferencia radica en su grado. Este es un método que parte del método de Euler, no obstante, este     tiene un mayor rendimiento a nivel computacional. A continuación veremos dos formas de este.</p>
