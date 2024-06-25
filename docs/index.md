@@ -20,7 +20,7 @@ Para problemas más complejos necesitamos una mejor aproximación, la cual podem
  
 * 1- Empezamos con $t_{0}=0$ y $x_{0}=0$.
 * 2- Discretizamos el tiempo de la forma ti.
-* 3- Encontramos un x para cada punto del tiempo, de la forma $x_{i} = x_{i-1} + hf(x_{i}-1)$.
+* 3- Encontramos un x para cada punto del tiempo, de la forma $x_{i} = x_{i-1} + hf(x_{i-1})$.
  
 ## Runge-Kutta (RK)
 El método de Runge-Kutta es un método numérico el cual se usa para aproximar la solución de una ecuación diferencial. Este es uno de los métodos más útiles para la resolución de ecuaciones diferenciales debido a su estabilidad. Hay varios tipos de Runge-Kutta cuya diferencia radica en su grado. Este es un método que parte del método de Euler, no obstante, este     tiene un mayor rendimiento a nivel computacional. A continuación veremos dos formas de este.
