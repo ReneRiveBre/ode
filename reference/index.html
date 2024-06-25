@@ -384,7 +384,7 @@
 
     <div class="doc doc-contents ">
 
-      <p>Metodo de Euler para resolver ODE</p>
+      <p>Método de Euler para resolver ODE</p>
 
 
 <p><span class="doc-section-title">Examples:</span></p>
@@ -412,7 +412,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Valor devuelto al evaluar las variables en la funcion.</p>
+                <p>Valor devuelto al evaluar las variables en la función.</p>
               </div>
             </td>
             <td>
@@ -454,7 +454,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Valor final elegido para la varibale dependiente t.</p>
+                <p>Valor final elegido para la variable dependiente t.</p>
               </div>
             </td>
             <td>
@@ -493,7 +493,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Un arreglo con los valores <code>x_vals</code> y <code>t_vals</code> para cada iteracion del for loop (solucion numerica de la ecuacion).</p>
+                <p>Un arreglo con los valores x_vals y t_vals para cada iteración del for loop (solución numérica de la ecuación).</p>
               </div>
             </td>
           </tr>
@@ -502,7 +502,8 @@
 
             <details class="quote">
               <summary>Source code in <code>ode/ode.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">17</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">16</span>
+<span class="normal">17</span>
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
@@ -527,9 +528,8 @@
 <span class="normal">39</span>
 <span class="normal">40</span>
 <span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Metodo de Euler para resolver ODE</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Método de Euler para resolver ODE</span>
 
 <span class="sd">    Examples:</span>
 <span class="sd">        &gt;&gt;&gt; x_vals20, t_vals20 = euler(func, 0.0, 0.0, 10.0, 20)</span>
@@ -537,14 +537,14 @@
 <span class="sd">        &gt;&gt;&gt; x_vals1000, t_vals1000 = euler(func, 0.0, 0.0, 10.0, 1000)</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        f (float): Valor devuelto al evaluar las variables en la funcion.</span>
+<span class="sd">        f (float): Valor devuelto al evaluar las variables en la función.</span>
 <span class="sd">        x0 (float): Valor inicial de la variable dependiente x(t).</span>
 <span class="sd">        t0 (float): Valor inicial de la variable independiente t.</span>
-<span class="sd">        tf (float): Valor final elegido para la varibale dependiente t.</span>
+<span class="sd">        tf (float): Valor final elegido para la variable dependiente t.</span>
 <span class="sd">        N (int): Pasos temporales para llegar al punto final (tf).</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        array: Un arreglo con los valores `x_vals` y `t_vals` para cada iteracion del for loop (solucion numerica de la ecuacion).</span>
+<span class="sd">        array: Un arreglo con los valores x_vals y t_vals para cada iteración del for loop (solución numérica de la ecuación).</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">t_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
@@ -572,7 +572,7 @@
 
     <div class="doc doc-contents ">
 
-      <p>Funcion de ejemplo para resolver mediante los metodos para ODEs</p>
+      <p>Función de ejemplo para resolver mediante los métodos para ODEs</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -607,7 +607,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Valores de la varibale independiente a evaluar.</p>
+                <p>Valores de la variable independiente a evaluar.</p>
               </div>
             </td>
             <td>
@@ -632,7 +632,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Un numero que es el resultado de evaluar los variables <code>x</code> y <code>t</code> en la funcion.</p>
+                <p>Un número que es el resultado de evaluar los variables x y t en la función.</p>
               </div>
             </td>
           </tr>
@@ -641,7 +641,8 @@
 
             <details class="quote">
               <summary>Source code in <code>ode/ode.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 4</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 3</span>
+<span class="normal"> 4</span>
 <span class="normal"> 5</span>
 <span class="normal"> 6</span>
 <span class="normal"> 7</span>
@@ -651,16 +652,15 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Funcion de ejemplo para resolver mediante los metodos para ODEs</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Función de ejemplo para resolver mediante los métodos para ODEs</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        x (float): Valores de la variable dependiente a evaluar.</span>
-<span class="sd">        t (float): Valores de la varibale independiente a evaluar.</span>
+<span class="sd">        t (float): Valores de la variable independiente a evaluar.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        float: Un numero que es el resultado de evaluar los variables `x` y `t` en la funcion.</span>
+<span class="sd">        float: Un número que es el resultado de evaluar los variables x y t en la función.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="o">-</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
@@ -681,7 +681,7 @@
 
     <div class="doc doc-contents ">
 
-      <p>Metodo de RK2 para resolver ODE</p>
+      <p>Método de RK2 para resolver ODE</p>
 
 
 <p><span class="doc-section-title">Examples:</span></p>
@@ -709,7 +709,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Valor devuelto al evaluar las variables en la funcion.</p>
+                <p>Valor devuelto al evaluar las variables en la función.</p>
               </div>
             </td>
             <td>
@@ -751,7 +751,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Valor final elegido para la varibale dependiente t.</p>
+                <p>Valor final elegido para la variable dependiente t.</p>
               </div>
             </td>
             <td>
@@ -790,7 +790,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Un arreglo con los valores <code>x_vals</code> y <code>t_vals</code> para cada iteracion del for loop (solucion numerica de la ecuacion).</p>
+                <p>Un arreglo con los valores x_vals y t_vals para cada iteración del for loop (solución numérica de la ecuación).</p>
               </div>
             </td>
           </tr>
@@ -799,7 +799,8 @@
 
             <details class="quote">
               <summary>Source code in <code>ode/ode.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">45</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">44</span>
+<span class="normal">45</span>
 <span class="normal">46</span>
 <span class="normal">47</span>
 <span class="normal">48</span>
@@ -826,9 +827,8 @@
 <span class="normal">69</span>
 <span class="normal">70</span>
 <span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">rk2</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Metodo de RK2 para resolver ODE</span>
+<span class="normal">72</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">rk2</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Método de RK2 para resolver ODE</span>
 
 <span class="sd">    Examples:</span>
 <span class="sd">        &gt;&gt;&gt; x_vals20, t_vals20 = rk2(func, 0.0, 0.0, 10.0, 20)</span>
@@ -836,14 +836,14 @@
 <span class="sd">        &gt;&gt;&gt; x_vals1000, t_vals1000 = rk2(func, 0.0, 0.0, 10.0, 1000)</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        f (float): Valor devuelto al evaluar las variables en la funcion.</span>
+<span class="sd">        f (float): Valor devuelto al evaluar las variables en la función.</span>
 <span class="sd">        x0 (float): Valor inicial de la variable dependiente x(t).</span>
 <span class="sd">        t0 (float): Valor inicial de la variable independiente t.</span>
-<span class="sd">        tf (float): Valor final elegido para la varibale dependiente t.</span>
+<span class="sd">        tf (float): Valor final elegido para la variable dependiente t.</span>
 <span class="sd">        N (int): Pasos temporales para llegar al punto final (tf).</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        array: Un arreglo con los valores `x_vals` y `t_vals` para cada iteracion del for loop (solucion numerica de la ecuacion).</span>
+<span class="sd">        array: Un arreglo con los valores x_vals y t_vals para cada iteración del for loop (solución numérica de la ecuación).</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">t_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
@@ -873,7 +873,7 @@
 
     <div class="doc doc-contents ">
 
-      <p>Metodo de RK4 para resolver ODE</p>
+      <p>Método de RK4 para resolver ODE</p>
 
 
 <p><span class="doc-section-title">Examples:</span></p>
@@ -901,7 +901,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Valor devuelto al evaluar las variables en la funcion.</p>
+                <p>Valor devuelto al evaluar las variables en la función.</p>
               </div>
             </td>
             <td>
@@ -943,7 +943,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Valor final elegido para la varibale dependiente t.</p>
+                <p>Valor final elegido para la variable dependiente t.</p>
               </div>
             </td>
             <td>
@@ -982,7 +982,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Un arreglo con los valores <code>x_vals</code> y <code>t_vals</code> para cada iteracion del for loop (solucion numerica de la ecuacion).</p>
+                <p>Un arreglo con los valores x_vals y t_vals para cada iteración del for loop (solución numérica de la ecuación).</p>
               </div>
             </td>
           </tr>
@@ -991,7 +991,8 @@
 
             <details class="quote">
               <summary>Source code in <code>ode/ode.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 75</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 74</span>
+<span class="normal"> 75</span>
 <span class="normal"> 76</span>
 <span class="normal"> 77</span>
 <span class="normal"> 78</span>
@@ -1020,9 +1021,8 @@
 <span class="normal">101</span>
 <span class="normal">102</span>
 <span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">rk4</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Metodo de RK4 para resolver ODE</span>
+<span class="normal">104</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">rk4</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Método de RK4 para resolver ODE</span>
 
 <span class="sd">    Examples:</span>
 <span class="sd">        &gt;&gt;&gt; x_vals20, t_vals20 = rk4(func, 0.0, 0.0, 10.0, 20)</span>
@@ -1030,14 +1030,14 @@
 <span class="sd">        &gt;&gt;&gt; x_vals1000, t_vals1000 = rk4(func, 0.0, 0.0, 10.0, 1000)</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        f (float): Valor devuelto al evaluar las variables en la funcion.</span>
+<span class="sd">        f (float): Valor devuelto al evaluar las variables en la función.</span>
 <span class="sd">        x0 (float): Valor inicial de la variable dependiente x(t).</span>
 <span class="sd">        t0 (float): Valor inicial de la variable independiente t.</span>
-<span class="sd">        tf (float): Valor final elegido para la varibale dependiente t.</span>
+<span class="sd">        tf (float): Valor final elegido para la variable dependiente t.</span>
 <span class="sd">        N (int): Pasos temporales para llegar al punto final (tf).</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        array: Un arreglo con los valores `x_vals` y `t_vals` para cada iteracion del for loop (solucion numerica de la ecuacion).</span>
+<span class="sd">        array: Un arreglo con los valores x_vals y t_vals para cada iteración del for loop (solución numérica de la ecuación).</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">t_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span><span class="n">tf</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
